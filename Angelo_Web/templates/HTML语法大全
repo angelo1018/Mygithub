@@ -1,0 +1,704 @@
+
+HTML语言语法大全：
+
+<! - - ... - -> 註解 
+<!> 跑馬燈 
+  <marquee>...</marquee>普通捲動 
+  <marquee behavior=slide>...</marquee>滑動 
+  <marquee behavior=scroll>...</marquee>預設捲動 
+  <marquee behavior=alternate>...</marquee>來回捲動  
+  <marquee direction=down>...</marquee>向下捲動 
+  <marquee direction=up>...</marquee>向上捲動 
+  <marquee direction=right></marquee>向右捲動 
+  <marquee direction=’left’></marquee>向左捲動 
+  <marquee loop=2>...</marquee>捲動次數 
+  <marquee width=180>...</marquee>設定寬度 
+  <marquee height=30>...</marquee>設定高度 
+  <marquee bgcolor=FF0000>...</marquee>設定背景顏色 
+  <marquee scrollamount=30>...</marquee>設定滚动速度
+  <marquee scrolldelay=300>...</marquee>設定捲動時間 
+  <marquee onmouseover="this.stop()">...</marquee>鼠标经过上面时停止滚动
+  <marquee onmouseover="this.start()">...</marquee>鼠标离开时开始滚动
+
+<!>字體效果 
+  <h1>...</h1>標題字(最大) 
+  <h6>...</h6>標題字(最小) 
+  <b>...</b>粗體字 
+  <strong>...</strong>粗體字(強調) （同上效果略同）
+  <i>...</i>斜體字 
+  <em>...</em>斜體字(強調) 
+  <dfn>...</dfn>斜體字(表示定義) 
+  <u>...</u>底線 
+  <ins>...</ins>底線(表示插入文字) 
+  <strike>...</strike>橫線 
+  <s>...</s>刪除線 
+  <del>...</del>刪除線(表示刪除) 
+  <kbd>...</kbd>鍵盤文字 
+  <tt>...</tt> 打字體 
+  <xmp>...</xmp>固定寬度字體(在文件中空白、換行、定位功能有效) 
+  <plaintext>...</plaintext>固定寬度字體(不執行標記符號) 
+  <listing>...</listing> 固定寬度小字體
+
+  <font color=00ff00>...</font>字體顏色 
+  <font size=1>...</font>最小字體 
+  <font style =’font-size:100 px’>...</font>無限增大 
+<!>區斷標記 
+  <hr>水平線 
+  <hr size=’9’>水平線(設定大小) 
+  <hr width=’80%’>水平線(設定寬度) 
+  <hr color=’ff0000’>水平線(設定顏色) 
+  <br>(換行) 
+  <nobr>...</nobr>水域(不換行) 
+  <p>...</p>水域(段落) 
+  <center>...</center>置中 
+<!>連結格式 
+  <base href=位址>(預設好連結路徑) 
+  <a href=位址></a>外部連結 
+  <a href=位址 target=’_blank’></a>外部連結(另開新視窗) 
+  <a href=位址 target=’_top’></a>外部連結(全視窗連結) 
+  <a href=位址 target=’頁框名’></a>外部連結(在指定頁框連結) 
+<!>貼圖/音樂 
+  <img src=圖片位址>貼圖 
+  <img src=圖片位址 width=’180’>設定圖片寬度 
+  <img src=圖片位址 height=’30’>設定圖片高度 
+  <img src=圖片位址 alt=’提示文字’>設定圖片提示文字 
+  <img src=圖片位址’ border=’1’>設定圖片邊框 
+  <bgsound src=MID音樂檔位址>背景音樂設定 
+<!>表格語法 
+  <table aling=left>...</table>表格位置,置左 
+  <table aling=center>...</table>表格位置,置中 
+  <table background=圖片路徑>...</table>背景圖片的URL=就是路徑網址 
+  <table border=邊框大小>...</table>設定表格邊框大小(使用數字) 
+  <table bgcolor=顏色碼>...</table>設定表格的背景顏色 
+  <table borderclor=顏色碼>...</table>設定表格邊框的顏色 
+  <table borderclordark=顏色碼>...</table>設定表格暗邊框的顏色 
+  <table borderclorlight=顏色碼>...</table>設定表格亮邊框的顏色 
+  <table cellpadding=參數>...</table>指定內容與格線之間的間距(使用數字) 
+  <table cellspacing=參數>...</table>指定格線與格線之間的距離(使用數字) 
+  <table cols=參數>...</table>指定表格的欄數 
+  <table frame=參數>...</table>設定表格外框線的顯示方式 
+  <table width=寬度>...</table>指定表格的寬度大小(使用數字) 
+  <table height=高度>...</table>指定表格的高度大小(使用數字) 
+  <td colspan=參數>...</td>指定儲存格合併欄的欄數(使用數字) 
+  <td rowspan=參數>...</td>指定儲存格合併列的列數(使用數字) 
+<!>分割視窗 
+  <frameset cols="20%,*">左右分割,將左邊框架分割大小為20%右邊框架的大小瀏覽器會自動調整 
+  <frameset rows="20%,*">上下分割,將上面框架分割大小為20%下面框架的大小瀏覽器會自動調整 
+  <frameset cols="20%,*">分割左右兩個框架 
+  <frameset cols="20%,*,20%">分割左中右三個框架 
+  <分割上下兩個框架 
+  <frameset rows="20%,*,20%">分割上中下三個框架 
+<! - - ... - -> 註解 
+<A HREF TARGET> 指定超連結的分割視窗 
+<A HREF=#錨的名稱> 指定錨名稱的超連結 
+<A HREF> 指定超連結 
+<A NAME=錨的名稱> 被連結點的名稱 
+<ADDRESS>....</ADDRESS> 用來顯示電子郵箱地址 
+<B> 粗體字 
+<BASE TARGET> 指定超連結的分割視窗 
+<BASEFONT SIZE> 更改預設字形大小 
+<BGSOUND SRC> 加入背景音樂 
+<BIG> 顯示大字體 
+<BLINK> 閃爍的文字 
+<BODY TEXT LINK VLINK> 設定文字顏色 
+<BODY> 顯示本文 
+<BR> 換行 
+<CAPTION ALIGN> 設定表格標題位置 
+<CAPTION>...</CAPTION> 為表格加上標題 
+<CENTER> 向中對齊 
+<CITE>...<CITE> 用於引經據典的文字 
+<CODE>...</CODE> 用於列出一段程式碼 
+<COMMENT>...</COMMENT> 加上註解 
+<DD> 設定定義列表的項目解說 
+<DFN>...</DFN> 顯示"定義"文字 
+<DIR>...</DIR> 列表文字標籤 
+<DL>...</DL> 設定定義列表的標籤 
+<DT> 設定定義列表的項目 
+<EM> 強調之用 
+<FONT FACE> 任意指定所用的字形 
+<FONT SIZE> 設定字體大小 
+<FORM ACTION> 設定戶動式表單的處理方式 
+<FORM METHOD> 設定戶動式表單之資料傳送方式 
+<FRame MARGINHEIGHT> 設定視窗的上下邊界 
+<FRame MARGINWIDTH> 設定視窗的左右邊界 
+<FRame NAME> 為分割視窗命名 
+<FRame NORESIZE> 鎖住分割視窗的大小 
+<FRame SCROLLING> 設定分割視窗的捲軸 
+<FRame SRC> 將HTML檔加入視窗 
+<FRameSET COLS> 將視窗分割成左右的子視窗 
+<FRameSET ROWS> 將視窗分割成上下的子視窗 
+<FRameSET>...</FRameSET> 劃分分割視窗 
+<H1>~<H6> 設定文字大小 
+<HEAD> 標示文件資訊 
+<HR> 加上分格線 
+<HTML> 文件的開始與結束 
+<I> 斜體字 
+<IMG ALIGN> 調整圖形影像的位置 
+<IMG ALT> 為你的圖形影像加註 
+<IMG DYNSRC LOOP> 加入影片 
+<IMG HEIGHT WIDTH> 插入圖片並預設圖形大小 
+<IMG HSPACE> 插入圖片並預設圖形的左右邊界 
+<IMG LOWSRC> 預載圖片功能 
+<IMG SRC BORDER> 設定圖片邊界 
+<IMG SRC> 插入圖片 
+<IMG VSPACE> 插入圖片並預設圖形的上下邊界 
+<INPUT TYPE NAME value> 在表單中加入輸入欄位 
+<ISINDEX> 定義查詢用表單 
+<KBD>...</KBD> 表示使用者輸入文字 
+<LI TYPE>...</LI> 列表的項目 ( 可指定符號 ) 
+<MARQUEE> 跑馬燈效果 
+<MENU>...</MENU> 條列文字標籤 
+<meta NAME="REFRESH" CONTENT URL> 自動更新文件內容 
+<MULTIPLE> 可同時選擇多項的列表欄 
+<NOFRame> 定義不出現分割視窗的文字 
+<OL>...</OL> 有序號的列表 
+<OPTION> 定義表單中列表欄的項目 
+<P ALIGN> 設定對齊方向 
+<P> 分段 
+<PERSON>...</PERSON> 顯示人名 
+<PRE> 使用原有排列 
+<SAMP>...</SAMP> 用於引用字 
+<select　>...</select　> 在表單中定義列表欄 
+<SMALL> 顯示小字體 
+<STRIKE> 文字加橫線 
+<STRONG> 用於加強語氣 
+<SUB> 下標字 
+<SUP> 上標字 
+<TABLE BORDER=n> 調整表格的寬線高度 
+<TABLE CELLPADDING> 調整資料欄位之邊界 
+<TABLE CELLSPACING> 調整表格線的寬度 
+<TABLE HEIGHT> 調整表格的高度 
+<TABLE WIDTH> 調整表格的寬度 
+<TABLE>...</TABLE> 產生表格的標籤 
+<TD ALIGN> 調整表格欄位之左右對齊 
+<TD BGCOLOR> 設定表格欄位之背景顏色 
+<TD COLSPAN ROWSPAN> 表格欄位的合併 
+<TD NOWRAP> 設定表格欄位不換行 
+<TD VALIGN> 調整表格欄位之上下對齊 
+<TD WIDTH> 調整表格欄位寬度 
+<TD>...</TD> 定義表格的資料欄位 
+<TEXTAREA NAME ROWS COLS> 表單中加入多少列的文字輸入欄 
+<TEXTAREA WRAP> 決定文字輸入欄是自動否換行 
+<TH>...</TH> 定義表格的標頭欄位 
+<TITLE> 文件標題 
+<TR>...</TR> 定義表格美一行 
+<TT> 打字機字體 
+<U> 文字加底線 
+<UL TYPE>...</UL> 無序號的列表 ( 可指定符號 ) 
+<var>...</var> 用於顯示變數 
+BlockQuotc文本缩进
+
+表示颜色的有三种方式；
+  1，16进制颜色代码
+  语法：#RRGGBB
+  例：<font color="#ff0000">红色</font>
+  2，10进制RGB码
+  语法：RGB（RRR，GGG，BBB）
+  例：<font color="rgb(255,000,000)">红色</font>
+  3,直接用颜色的英文名称
+   例：<font color="red">红色</font>
+
+
+<body>.....</body>属性可分为三种：
+  1，背景属性
+     包括：bgcolor,background
+  2,文字属性：
+     包括：text,link,alink,vlink,
+  3,留白属性：
+     其中分为：leftmargin,topmargin
+     .bgcolor背景色
+      语法格式：<body bgcolor="#ff0000">
+     .background背景图案。
+      语法格式：<body background="url">
+     .text文本颜色（非连接文字颜色）
+     .link连接文字颜色（可连接文字颜色）
+     .alink活动连接文字颜色（正被点击的可连接文字的颜色）
+     .vlink已访问连接文字颜色）（已经点击访问过的可连接文字的颜色）
+        语法格式：<body text="color" link="color" alink="color" vlink="color">
+     .leftmargin 页面左侧的留白距离
+     .topmargin 页面顶部的留白距离
+      语法格式：<body leftmargin="value" topmargin="value">
+            注：value为长度值为数字
+
+align 属性
+语法：<h2 align="?">文字</h2>
+其属性有三种：left靠左,center居中,right靠右
+
+〈p〉</p>为段落标记，可利用以上属性对整个段落进行设置
+〈br>为换行标记
+ <nobr></nobr>为不换行标记 放在文字两边即可
+  例：<body>
+      <h3>江南逢李龟年</h3>
+<p>歧王宅里寻常见<br>
+催九堂前几度闻<br>
+正是江南好风景<br>
+落花时节又逢君</p>
+</body>
+  
+预格式化：
+<pre>......</pre> 浏览是效果和编写是效果格式一样
+
+列表分为
+  1无序列表又称符号列表
+    语法格式：
+    <ul type="">type的属性可选直disc实心圆点,clrcle空心圆点,square实心方框
+    <li>文字</li>
+    <li>文字</li>
+    </ul>
+
+  2有序列表
+    语法格式：
+    <ol type="?" start"?">
+    <li>文字</li>
+    <li>文字</li>
+    </ol>
+    type的值是编号字符可选的有1...,a...,A...,i... ,I...
+    start为起始值例：如果start为3是那么将从3开始，而且必须是数字。
+
+  3定义列表
+    <dl>定义列表标记
+    <dt>标示定义条目
+    <dd>标示定义内容
+    语法格式：
+    <dl>
+    <dt>文字</dt>
+    <dd>文字内容</dd>
+    </dl>
+
+
+连接和图像
+语法格式：
+<a href="url" name="?" target="?" title="?">....</a>
+属性：href 连接目标 值可以是url地址也可以是连接锚点
+<a href="url">...</a>或者
+<a href="锚点">...</a>
+
+name 连接名称
+语法格式：<a name="锚点名称">...</a>
+例：<a name="abcdcf">...</a>
+连接到该锚点的连接则应是：
+<a name="#abcdef">....</a>
+
+target目标窗口
+语法格式：
+<a href="url" target="_blank|_self|_farent|_top|windowname">....</a>
+-blank打开新窗口
+_self当前窗口打开
+一下两个仅在框架叶面中应用
+_parent当前窗口的父级窗口（上一级）打开
+_top在最高一级的窗口打开
+
+windowname已命名的窗口或框架中打开连接
+title连接提示
+<a href="http://www.crazytribe.net" title="打开狂人部落的首页">狂人部落</a>
+
+图像<img>
+语法格式：<img src="url" alt="?" width="?" height="?" border="?" align="?">
+border属性定义图片边框的宽度，默认值为0
+align属性设置图片旁边文字的位置
+语法格式：<img src="" align"">
+可选值有：
+top图片和文字顶部对齐
+middle图片和文字居中对齐
+bottom图片和文字底边对齐（默认）
+left图片居左对齐，文字沿图片绕排
+right图片居右对齐，文字沿图片绕排
+absmiddle图片对齐到目前文字行绝对中央
+absbottom图片对齐到目前文字行绝对底部
+
+文字的排版
+不换行空白标记&nbsp
+font元素
+语法格式：
+<font face="字体名称" size="字体大小" color="字体颜色">
+字体大小可选值为1——7，默认为3
+例：〈font face="黑体" size="4" color="#ff00ff">....</font>
+
+水平线<hr>
+语法格式：<hr width="宽度" align="对齐方式默认居中center" size="水平线厚度默认为2" color="颜色" noshade>
+noshade无阴影，既实线
+
+层〈div><span>两种元素
+<div>是块级元素，和段落元素<p>相似，不同的是两个<div>元素之间不会产生两个<p>元素之间的空行，
+<span>是行内元素，可以定义段落中部分文字的属性
+语法格式：
+<div align="" style="">...</div>
+align设置层中元素的水平对齐方式
+stule设置元素应用css规范的属性
+<div>兼容性比<span>要好一点，最好使用<div>
+
+表格
+语法格式：
+<table width="" bgcolor="" background="" border="" cellspacing="" cellpadding="">
+<tr>...<td>....</td>....</tr>
+</table>
+border边框宽度默认值为0，既没有边框
+cellspacing表格中单元格的边距大小，默认值为两个像素
+cellpadding表格中单元格之间的间距大小，默认值为两个像素
+
+tr元素
+语法格式：
+<tr align="" bgcolor="">....</tr>
+align属性对齐方式可选值如下：left,center,tight,默认为left
+bgcolor指定该行的背景颜色
+
+td元素
+语法格式：
+<td width="宽度" height="高度" align="水平对齐方式" valign="垂直对齐方式" bgcolor="" background="" rowspan="单元格的行跨度" colapan="单元格的列跨度">.....</td>
+align属性的可选值有：left,center,right
+valign属性的可选值有：top,middle,bottom
+rowspan和colapan跨行和跨列的数量，默认为1
+
+框架
+<frameset></framset>框架组标记
+<frame></frame>框架标记
+语法格式：
+<frameset>
+<frame></frame>
+<frame></frame>
+</franeset>
+
+<frameset></frameset>元素（双标签）
+语法格式：
+<frameset cols="" rows="" frameborder="" border="" framespacing="">
+.......
+</frameset>
+属性：
+cols 垂直切割窗口（如左右分割两个窗口）接受整数值，百分数，*（*代表占用余下空间）数值的个数代表分成的部分数目，要以逗号分隔。例：cols="30,*,50%"可以 切成三个视窗，第一部分是30像素（pixels）为绝对分割，第二部分是当分配完第一和第三视图后剩下的空间，第三部分则占整个窗口的50%宽度，为相对分割。
+rows 就是横向切割，将窗口上下分开，数值设置同上。
+      以上两属性尽量不要在同一个<frameset>标记中，因为王井（netscape）不支持，尽量采用多重分割。
+frameborder 设置框架的边框，其值有0不要边框，1要边框。
+border 设置框架边框厚度
+framespacing 表示框架与框架间保留空白的距离
+
+frame 元素（单标签）
+语法格式：
+<frame name="" src="url" scrolling="yes/no" noresize>
+属性：
+name 框架名称，指定框架来做连接的目标窗口。
+src  框架中要显示的网页文当url地址，每个个框架要对应一个html文挡。
+scrolling 是否显示滚动条，yes/no,auto是自动。
+noresize 设置不让使用者改变这个框架的大小，
+
+noframe元素
+指定当使用了框架的页面在不支持框架的浏览器中打开时显示的信息
+语法格式：
+<noframe>
+......
+</noframe>
+
+表单<form></form>
+语法格式：
+<form action="url" method="get/post">
+....
+<input type=submit><input type=reset>
+</form>
+method有两种提交方式get,post
+action 是指明处理该表单的程序位置，这样表单所填的资料才能传给cgi做处里，可设定此参数为action="mailto:lwr8494@163.com" 这样此表单所填的资料将会发送到这个邮箱地址。
+method 是指传送信息给cgi等网络程序的方式。可选post方法， get方法，post方法容许传送大量信息。get方法只接受低于1k的信息。
+申请表单用的是post搜索引擎用的是get
+
+input元素
+语法格式：<input type="">
+type属性的可选值有：
+  text 单行文本框
+属性：name 文本框名称
+      value 文本框的初始值
+      size 文本框的长度
+      maxlength 可输入字符串最大的长度
+  radio 单选框
+属性：name 单选框名称
+      value 内部值
+      checked 默认选定
+  checkbox 复选框
+属性：name 复选框名称
+      value 内部值
+      checked 默认选定
+  reset 重置按钮
+  submit 确定按钮
+属性：name 按钮名称
+      value 显示在按钮上的文字
+  password 密码框
+属性与文本框的属性完全相同
+file 文件域
+属性：name文件域名称
+      size 文件域的长度
+      maxlength 文件域可接受的字符数量的上限
+hidden 隐藏域
+属性：name 隐藏域名称
+      value 内定值
+image 图片域
+属性：name 所要代表的按钮，可以是submit,reset,或其他.
+      src 按钮图片的url 地址
+
+列表框<select>
+语法格式：
+<select>
+.....
+<option>....</option>
+.....
+</select>
+
+select元素
+语法格式：<select name="" size=""multiple></select>
+name 指定列表框的名字
+size 指定列表框显示列表项的条数，如果指定了该参数，select元素是个列表，否则是一个下拉列表框
+multiple 指定了这个参数，则表示该列表框可选择多项，否则只可选择一项
+ 
+option属性
+语法格式：<option value="" selected></option>
+value 该列表项的值
+selected 如果设定了这个参数，默认为选定这一项
+
+多行文本框<textarea>
+<textarea name="" cols="" rows="" wrap="off/physical/virtual"></textarea>
+属性：
+name文本框的名称
+cols文本框的宽度
+rows文本框的高度
+wrap文本框的折行方式可选值有：
+   off不保存换行信息
+   physical强迫浏览器在发送信息到web服务器端时必须将多行文本框的文字一行一行的送出，
+   virtual送出连续成串的字除非使用者按回车。
+
+css 层叠样式表 
+引入层叠样式表的方法包括：
+1，外联式样式表
+2，内嵌样式表
+3，元素内定
+4，导入样式表
+
+外联式样式表
+例：<head>
+<link rel="stylesheet" href="/css/default.css">
+</head>
+<body>
+....
+</body>
+</html>
+属性：rel 用来说明<link>元素在这里要完成的任务是连接一个独立的css文件。而href属性给出了所要连接css文件的url地址 
+内嵌式样式表：
+例：<html>
+<head>
+<style type="text/css">
+<!--
+td{font:9pt;color:red}     
+.font105{font:10.5pt;color:blue}
+-->
+</style>
+</head>
+<body>....</body>
+</html>
+
+元素内定
+格式：<p style="font-size:10.5pt">
+ 
+导入式样式表
+〈html>
+<head>
+<style type="text/css">
+<!--
+@import url(css/home.css);
+-->
+</style>
+<body>
+....
+</body>
+</html>
+
+css的优先级
+越接近目标的样式定义优先级越高，高优先级样式将继承低优先级样式的未重叠定义但覆盖重叠的定义
+如果4种样式表对同一元素定义了不同的样式，那么他们的优先级顺序从高到低是，元素内定，内嵌样式表，导入样式表，外联样式表。
+
+css结构
+例：td{font-size:10.5pt;color:#666666}
+css样式包含两个基础部分，
+选择符<td>和声明{font-size:10.5pt;color:#666666}
+声明也有两部分组成：
+属性font-size,color和值10.5pt,#666666
+
+选择符分为6种
+1元素选择符
+当页面上多个元素的样式相同时，可以将多个元素放在一起定义，中间以逗号分开  例：td,p,li,input,select{font-size:12px;}
+2class(类)选择符
+例：〈head>
+<title>.....</title>
+<style type="text/css">
+<!--
+.red{font-size:10.5pt;color:#ff0000}
+-->
+</style>
+</head>
+<body bgcolor="#ffffff">
+<p class="red">士大夫井冈山地方官</p>
+<p>九连环离开计划</p>
+</body>
+还有一种方法就是限定可以应用它的页面元素
+例：〈head>
+<title>.....</title>
+<style type="text/css">
+<!--
+h1.red{color:#ff0000}
+-->
+</style>
+</head>
+<body bgcolor="#ffffff">
+<p class="red">士大夫井冈山地方官</p>
+<h1 class="red">九连环离开计划</h1>
+</body>
+3 id选择符
+与class选择附类似，只是把'.'换成'#'
+例：<body>
+<head>
+<style type="text/css">
+<!--
+#select{font-size:18px;color:#0000ff}
+-->
+</style>
+</head>
+<body>
+<table width="250" border="1" height="50">
+<tr>
+<td align="center" id="select">id选择符</td>
+</tr>
+</table>
+</body>
+</html>
+我们看到在调用ID选择附时与CLASS选择附类似，只是将class=""换成了id=""，方便页面脚本语言的调用
+4 关联选择符
+<body>
+<head>
+<style type="text/css">
+<!--
+td p{font-size:18px;color:#0000ff}
+-->
+</style>
+</head>
+<body>
+<table width="250" border="1" height="50">
+<tr>
+<td align="center"><p>关联选择符</p></td>
+</tr>
+</table>
+<p>关联选择符</p>
+</body>
+</html>
+我们设定了在元素中<td>的元素<p>所包含文字的样式，只有在两个条件都满足是，样式在会起作用，
+5伪类选择符
+是只能用在css选择符里，而不能用在html代码中的选择符
+例：
+〈html>
+<head>
+<style type="text/css">
+<!--
+a:link{color:#000000}
+a:visited{color:#cccccc}
+a:hover{color:#ff0000}
+a:active{color:#ooooff}
+-->
+</style>
+</head>
+<body>
+<p><a href="#">关联选择符</a><p>
+<p><a href="#">关联选择符</a><p>
+<p><a href="#">关联选择符</a><p>
+<p><a href="#">关联选择符</a><p>
+〈/body>
+</html>
+正确的顺序是a:link\a:visited\a:hover否则会引起页面上连接颜色混乱
+6伪元素选择符
+与伪类选择符定义类似，目前被大多数浏览器支持的有两个：首行伪元素（first-line）和首字符伪元素(first-letter)是用来实现首行大写和首行下沉效果的
+例：首行
+<html>
+<head>
+<style>
+<!--
+p:first-line{color:red;font-size:20pt}
+-->
+</style>
+</hesd>
+<body>
+<p>dfgsadfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdf...</p>
+</body>
+</html>
+长度随浏览器窗口大小而改变
+首字
+<html>
+<head>
+<style>
+<!--
+p:first-letter{color:red;font-size:50pt;float:left;}
+-->
+</style>
+</hesd>
+<body>
+<p>dfgsadfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdf...</p>
+</body>
+</html>
+以上两种都只能应用于块状元素上
+
+css规则
+一继承
+例：<html>
+<head>
+<style type="text/css">
+<!--
+td{font-size:12pt}
+p{color:red}
+-->
+</style>
+</hesd>
+<body>
+<table width="300" border="1" height="150">
+<tr>
+<td align="center">
+<p>css规则</p>
+</td>
+</table>
+</body>
+</html>
+<p>为最高级<td>次一级两种css用在一个属性元素上，相同的覆盖，不同的继承，
+
+二组合
+例:td{font-size:12pt}
+   p1{font-size:12pt}
+组合后
+td,.p1{font-size:12pt}
+
+
+三层叠
+在样式里定义过后，在表格属性中又定义一次
+<html>
+<head>
+<style type="text/css">
+<!--
+red{color:#ff0000 limportant}
+-->
+</style>
+</hesd>
+<body>
+<table width="300" border="1" height="150">
+<tr>
+<td align="center" style="color:#0000ff" class="red">决撒地方官</td>
+</tr>
+</table>
+</body>
+</html>
+
+css单位
+分四大类：
+1 长度单位
+数值可以是整数，小数，正数，负数，0，后加单位（负值不要轻易使用）
+换算关系：
+1in(英寸)=6pc(派)
+1in(英寸)=72pt(磅)
+1in(英寸)=2.54(厘米)
+1cm(厘米)=10mm(毫米)
+1cm(厘米)=0.3937(英寸)
+1pt(磅)=1/72in(英寸)=0.2478mm(毫米)
+1pc(派)=1/6in(英寸)=我国新四号铅字的尺寸
+2 百分比单位
+3 颜色单位
+4 url单位
+
+好文要

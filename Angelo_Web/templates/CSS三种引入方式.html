@@ -1,0 +1,37 @@
+<!-- 
+	1、行内式
+	2、嵌入式(应用较少)
+	3、外部式
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>css的三种引入方式</title>
+ 	<!-- 外部式关联css文件 -->
+ 	<link rel="stylesheet" type="text/css" href="css/html.css"> 
+ 	<!-- 嵌入式声明 -->
+ 	<style type="text/css">
+ 		h3{
+ 			color:green;
+ 		}
+ 		/*h4{
+ 			color: green;
+ 		}*/
+ 	</style>	
+ </head>
+ <body>
+ 	<!-- 行内式 -->
+	 <p style="color:orange;">
+	 	行内式文本用什么颜色？
+	 </p>
+	 <!-- 嵌入式 -->
+	 <h3>
+	 	嵌入式文本颜色
+	 </h3>
+	 <!-- 外部式 -->
+	 <h4>
+	 	外部式文本颜色
+	 </h4>
+ </body>
+ </html>
