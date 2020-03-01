@@ -84,9 +84,9 @@ WSGI_APPLICATION = 'Angelo_Web.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'webdb',
+        'NAME': 'findb',
         'USER': 'root',
-        'PASSWORD': 'root0318',
+        'PASSWORD': 'root1234',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
